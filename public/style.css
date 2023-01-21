@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  
+  background-color: #fff;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+main {
+  padding: 0;
+  margin-top: 40px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+thead{
+  color:red;
+}
+
+.user-stories li {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #2574a9;
+}
+
+form {
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type='text'] {
+  width: 220px;
+  text-align: center;
+}
+.btn {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Clash Display Semibold;
+	color: var(--black);
+	padding: 8px 32px;
+	border-radius: 2px;
+	outline: 2px solid var(--black);
+	cursor: pointer;
+	transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5), box-shadow 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
+	width: fit-content;
+	background: var(--white);
+	margin: 8px 0 8px 0;
+	border: none;
+}
+.btn:hover, .btn:focus-visible {
+	transform: translateX(5px) translateY(-5px);
+	box-shadow: -5px 5px 0 0 var(--gray), -5px 5px 0 2px var(--black);
+}

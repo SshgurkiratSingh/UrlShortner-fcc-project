@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.computerhope.com%2Fjargon%2Fj%2Fjavascript.htm&psig=AOvVaw0_TRyi8vk5wXBTCwMRuLLB&ust=1674372234304000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjN7YLH1_wCFQAAAAAdAAAAABAE"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+   <link href="https://bouncecss.bookie0.repl.co/bounce.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+    <h1>URL Shrinker</h1>
+    <main>
+      <section>
+        <form action="./api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://github.com/sshgurkiratsingh" />
+            <input type="submit" value="POST URL" class="btn"/>
+          </fieldset>
+        </form>
+      </section><center>
+     <div className="overflow-x-auto">
+  <table className="table">
+        <thead>
+          <tr>
+            <th>Full Url</th>
+            <th>Short Url</th>
+            <th>Clicks</th>
+          </tr>
+          
+        </thead>
+        <tbody>
+          <% shorturls.forEach(shorturls=>{ %>
+            <tr>
+          <td><a href="<%= shorturls.fullurl %>"><%= shorturls.fullurl %></a></td>
+          <td><a href="/api/shorturl/<%= shorturls.short %>">/<%= shorturls.short %></a></td>
+  <td><%= shorturls.clicks %></td>
+        </tr>
+            
+         <% }) %>
+          </tbody>
+      </table>
+        </center>
+    </main>
+    <footer>
+<!--       <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p> -->
+    </footer>
+  </body>
+</html>
