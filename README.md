@@ -35,10 +35,5 @@ The application has two main routes:
 ## Deployment
 This application is ready to be deployed to a hosting platform like Heroku, along with a MongoDB provider like Mongo Atlas.
 
-### Note
-Please make sure to replace the variable `<username>` in the git url with your username in the git clone command.
-
-This application is built as a boilerplate and you can further customize it according to your needs.
-
 ## Contribution
 Feel free to fork the repository and submit pull requests with any improvements or bug fixes.
